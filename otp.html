@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" >
+           <div class="heading">
+              <img src="images/password.png" alt="" style="display: inline;">
+              <h3 style="display: inline; align-content: center;">Enter the code we just texted you</h3>
+           </div>
+           <form action="./name.html">
+                <div class="input-icons" >
+                    <input class="input-otp" id="input-otp1" type="text" placeholder="" maxlength="1" onkeyup="changeTheBackgroundColorOfInput1()" >
+                    <input class="input-otp" id="input-otp2" type="text" placeholder="" maxlength="1" onkeyup="changeTheBackgroundColorOfInput2()" >
+                    <input class="input-otp" id="input-otp3" type="text" placeholder="" maxlength="1" onkeyup="changeTheBackgroundColorOfInput3()" >
+                    <input class="input-otp" id="input-otp4" type="text" placeholder="" maxlength="1" onkeyup="changeTheBackgroundColorOfInput4()" >
+                </div>
+                <div class="btn-design">
+                    <button class="btn"> Next ></button>
+                </div>
+           </form>
+           
+         <div class="para">
+             <p>By entering your number you're agreeing to our</p>
+             <p> Term of Service and Privacy Policy Thanks</p>
+         </div>
+    </div>
+    <script>
+        function changeTheBackgroundColorOfInput1() {
+           if (document.getElementById("input-otp1").value !== "") {
+              document.getElementById("input-otp1").style.background = "#DD2E44";
+              document.getElementById("input-otp1").style.color = "#fff";
+           } 
+        }
+        function changeTheBackgroundColorOfInput2() {
+           if (document.getElementById("input-otp2").value !== "") {
+              document.getElementById("input-otp2").style.background = "#DD2E44";
+              document.getElementById("input-otp2").style.color = "#fff";
+           } 
+        }
+        function changeTheBackgroundColorOfInput3() {
+           if (document.getElementById("input-otp3").value !== "") {
+              document.getElementById("input-otp3").style.background = "#DD2E44";
+              document.getElementById("input-otp3").style.color = "#fff";
+           } 
+        }
+        function changeTheBackgroundColorOfInput4() {
+           if (document.getElementById("input-otp4").value !== "") {
+              document.getElementById("input-otp4").style.background = "#DD2E44";
+              document.getElementById("input-otp4").style.color = "#fff";
+           } 
+        }
+     </script>
+</body>
+</html>
